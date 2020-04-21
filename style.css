@@ -1,0 +1,594 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.lvl1-menu {
+    display: none;
+}
+
+.lvl2-menu {
+    width: calc(100% - 66px);
+    top:0px;
+    background-color: white;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.lvl2-menu ul:nth-child(2) {
+    display: none;
+}
+.lvl2-menu ul:nth-child(3) {
+    display: none;
+}
+
+.lvl2-menu ul{
+    display: none;
+}
+
+.logo-box {
+    height: 48px;
+    width: 106px;
+    background-image: linear-gradient(135deg, red, purple);
+}
+.logo-box img {
+    width: 66px;
+    height: 16px;
+    position: relative;
+    top: 16px;
+    left: 20px;
+}
+
+.menu-i {
+    width: 48px;
+    border-left: 1px solid rgb(199, 181, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-i i {
+    font-size: 30px;
+    color: orange;
+    display: block;
+}
+
+.top-news-item {
+    margin: 5px;
+    color: white;
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/coronavirus-pandemic-digital-privacy-796x417.png');
+    background-size: cover;
+}
+.tn-item-back{
+    background-image: linear-gradient(135deg, #00000061,#000000d6);
+    padding: 20px;
+}
+
+.top-news-item h5 {
+    padding-top: 20%;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.top-news-item h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top-news-item p {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.latest-news {
+    padding: 10px;
+}
+
+.latest-news h2 {
+    font-size: 25px;
+    color: rgb(255, 72, 0);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.lt-item {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.lt-itme-img {
+    height: 100px;
+    flex-shrink: 0;
+    width: 100px;
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/AWS-Amazon-516x270.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lt-itme-cont {
+    padding: 10px;
+}
+
+.lt-itme-cont h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lt-itme-cont ul {
+    font-size: 12px;
+    display: flex;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.raised {
+    padding: 10px;
+}
+
+.raised h2 {
+    font-size: 25px;
+    color: rgb(255, 72, 0);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.raised ul {
+    color: rgb(255, 72, 0);
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.raised ul li {
+    color: rgb(255, 72, 0);
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.funding-item {
+    position: relative;
+    margin-top: 20px;
+}
+
+.funding-item img {
+    width: 50px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+.fund-name{
+    background-color: rgb(255, 136, 0);
+    padding: 10px 0px 10px 70px;
+}
+
+.fund-summ{
+    background-color: rgb(255, 151, 151);
+    padding: 10px 0px 10px 70px;
+}
+
+.fund-set {
+    background-color: #f5dede;
+    border-bottom: 1px solid rgb(238, 130, 144);
+    font-size: 12px;
+}
+
+.fund-set div {
+    padding: 10px;
+}
+
+.fund-all {
+    background-color: #f5dede;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.chapter-box{
+    margin-top: 20px;
+}
+
+.chapters {
+    padding: 10px;
+}
+
+.chapters h2 {
+    font-size: 25px;
+    color: rgb(255, 72, 0);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.ch-box-popular{
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/LOVE-LETTER-TO-header-image-LG-B9-OLED-TV-368x276.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ch-upper-box {
+    background-image: linear-gradient(to bottom, #0000001a, #000000c4);
+    color: white;
+    padding: 20px;
+}
+
+.ch-upper-box h5{
+    padding-top: 40%;
+    font-weight: lighter;
+}
+.ch-upper-box h3{
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ch-upper-box ul{
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+    display: flex;
+    color: #565656;
+}
+
+.ch-upper-box ul li {
+    padding-right: 10px;
+}
+
+.ch-box-latest {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 240, 240);
+    color: red;
+    padding: 5px;
+    margin-top: 3px;
+    height: 100px;
+    font-size: 14px;
+}
+
+.ch-box-latest div:nth-child(2){
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/header-image-iphone-plus-iphone-max.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.ch-box-latest div:nth-child(1){
+    padding: 10px;
+}
+
+.ch-box-latest div:nth-child(1) h4{
+    padding-top: 10px;
+}
+
+.ch-box-othrs ul{
+    list-style-type: disc;
+    font-size: 12px;
+    margin-left: 16px;
+}
+
+.ch-box-othrs li {
+    font-size: 12px;
+    color: grey;
+    border-bottom:1px solid grey;
+    padding: 10px 10px;
+}
+
+.latest-deals{
+    margin: 10px;
+}
+
+.latest-deals h2 {
+    font-size: 25px;
+    color: rgb(255, 72, 0);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.deal-box {
+    display: flex;
+    margin-top: 10px;
+}
+
+.deal-img{
+    background-image: url('https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg');
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+    padding: 5px;
+}
+.deal-item {
+    padding-left: 10px;
+}
+
+.deal-item h4 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.deal-item p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+}
+.deal-item p span {
+    text-decoration-line: line-through;
+}
+
+
+footer {
+    background-color: rgb(29, 29, 29);
+    color: rgb(230, 230, 230);
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px;
+}
+footer ul li {
+    padding-left: 10px;
+}
+
+/* for mobile */
+@media only screen and (min-width: 768px) {
+
+    header {
+        position: static;
+        display: grid;
+        grid-template-columns: 106px auto;
+        grid-row: auto auto;
+        z-index: 1;
+    }
+
+    .logo-box {
+        height: auto;
+        grid-row: 1 / span 2;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        transition: height 5s;
+    }
+
+    .logo-box img {
+        display: block;
+        position: static;
+    }
+
+    .lvl1-menu{
+        color: white;
+        background-color: black;
+        font-weight: lighter;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lvl1-menu ul {
+        display: flex;
+    }
+
+    .lvl1-menu ul li {
+        display: flex;
+        padding: 5px;
+    }
+
+    .lvl2-menu {
+        grid-column: 2 / 3;
+        width: auto;
+    }
+
+    .lvl2-menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .lvl2-menu ul li{
+        padding-left: 10px;
+        color: rgb(133, 124, 121);
+    }
+
+    .menu-i {
+        display: none;
+    }
+
+    .fixed {
+        position: fixed;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .padding {
+        margin-top: 78px;
+    }
+
+    .top-news {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-template-rows: auto auto;
+    }
+
+    .top-news div:nth-child(1) {
+        grid-row: 1 / 3;
+    }
+    .top-news div:nth-child(1) .tn-item-back {
+        height: calc(100% - 40px);
+    }
+    .top-news div:nth-child(2) .tn-item-back {
+        height: calc(100% - 40px);
+    }
+    .top-news div:nth-child(3) .tn-item-back {
+        height: calc(100% - 40px);
+    }
+
+    .top-news div:nth-child(1) .tn-item-back h5{
+        padding-top: 55%;
+    }
+    .top-news div:nth-child(2) .tn-item-back h5{
+        padding-top: 30%;
+    }
+    .top-news div:nth-child(3) .tn-item-back h5{
+        padding-top: 30%;
+    }
+
+
+    .latest-news {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .latest-news-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lt-item {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+
+    .lt-itme-img {
+        width: auto;
+        
+    }
+
+    .lt-itme-cont h4 {
+        font-size: 14px;
+    }
+
+    .raised {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .funding-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .funding-item {
+        flex-grow: 1;
+        margin: 0px 5px;
+    }
+
+    .raised ul {
+        display: flex;
+    }
+
+    .raised ul li{
+        padding-right: 10px;
+    }
+
+    .chapters {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chapter-box {
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .latest-deals {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .dl-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .deal-box {
+        box-sizing: border-box;
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .deal-img {
+        width: auto;
+        padding-top: 65%;
+    }
+
+    .deal-item {
+        padding: 5px;
+    }
+
+}
+
+
+@media only screen and (min-width: 960px) {
+
+
+    .chapter-box {
+        width: 33.3%;
+    }
+
+    .lt-item {
+        width: 33.3%;
+    }
+    
+
+}
