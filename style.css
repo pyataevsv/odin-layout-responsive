@@ -314,14 +314,14 @@ header {
 .ch-box-othrs ul{
     list-style-type: disc;
     font-size: 12px;
-    margin-left: 16px;
+    list-style-position: inside
 }
 
 .ch-box-othrs li {
     font-size: 12px;
     color: grey;
     border-bottom:1px solid grey;
-    padding: 10px 10px;
+    padding: 5px;
 }
 
 .latest-deals{
