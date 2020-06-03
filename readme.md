@@ -1,2 +1,2 @@
 layout of https://thenextweb.com/
-responsive
+responsive [here](https://pyataevsv.github.io/odin-layout-responsive/)
